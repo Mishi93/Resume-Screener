@@ -3,18 +3,20 @@ uvicorn>=0.28.0
 sqlalchemy>=2.0.0
 pydantic>=2.6.0
 python-dotenv>=1.0.1
-
+python-multipart>=0.0.9
+# File parsing (used in main.py / standalone_app.py for resume text extraction)
+pypdf>=4.0.0
+python-docx>=1.1.0
 # LangChain core and community packages
 langchain>=0.1.0
 langchain-core>=0.1.0
 langchain-community>=0.1.0
 langchain-text-splitters>=0.0.1
-
+langchain-huggingface>=0.1.0
 # Vector Database and Embedding dependencies
 faiss-cpu>=1.8.0
 sentence-transformers>=2.5.0
 huggingface_hub>=0.21.0
-
 # GUI (Streamlit dashboard with interactive charts)
 streamlit>=1.32.0
 plotly>=5.20.0
