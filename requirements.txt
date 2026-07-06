@@ -1,0 +1,16 @@
+fastapi>=0.110.0
+uvicorn>=0.28.0
+sqlalchemy>=2.0.0
+pydantic>=2.6.0
+python-dotenv>=1.0.1
+
+# LangChain core and community packages
+langchain>=0.1.0
+langchain-core>=0.1.0
+langchain-community>=0.1.0
+langchain-text-splitters>=0.0.1
+
+# Vector Database and Embedding dependencies
+faiss-cpu>=1.8.0
+sentence-transformers>=2.5.0
+huggingface_hub>=0.21.0
