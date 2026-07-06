@@ -14,3 +14,7 @@ langchain-text-splitters>=0.0.1
 faiss-cpu>=1.8.0
 sentence-transformers>=2.5.0
 huggingface_hub>=0.21.0
+
+# GUI (Streamlit dashboard with interactive charts)
+streamlit>=1.32.0
+plotly>=5.20.0
