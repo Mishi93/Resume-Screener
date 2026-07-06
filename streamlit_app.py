@@ -32,11 +32,20 @@ embeddings + LLM calls, and a valid HF_TOKEN in your .env file.
 
 import io
 import json
+import os
 
 import streamlit as st
 import plotly.graph_objects as go
 from pypdf import PdfReader
 from docx import Document
+
+# On Streamlit Community Cloud, secrets come from st.secrets (set via
+# App settings -> Secrets), not from a .env file (which should never be
+# committed to GitHub). Locally, .env + load_dotenv() still works fine
+# since rag_service.py already calls load_dotenv() itself. This bridges
+# st.secrets into os.environ so os.getenv("HF_TOKEN") works either way.
+if "HF_TOKEN" in st.secrets:
+    os.environ["HF_TOKEN"] = st.secrets["HF_TOKEN"]
 
 from app.database import engine, Base, SessionLocal
 from app import models
