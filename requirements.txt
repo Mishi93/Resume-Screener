@@ -20,3 +20,5 @@ huggingface_hub>=0.21.0
 # GUI (Streamlit dashboard with interactive charts)
 streamlit>=1.32.0
 plotly>=5.20.0
+torch
+torchvision
