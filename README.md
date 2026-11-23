@@ -98,5 +98,10 @@ Resume-Screener/
 
 ## Screenshots
 
+<img width="1363" height="639" alt="image" src="https://github.com/user-attachments/assets/fae7c164-218c-4025-a0ab-16a8db59a778" />
+
+<img width="1366" height="647" alt="image" src="https://github.com/user-attachments/assets/c4feba77-8b5f-4013-9e4f-8bf47c90bf7c" />
+
+
 
 
